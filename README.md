@@ -1,4 +1,3 @@
-roosmarks-chrome-extension
-==========================
+# Roosmarks Chrome extension
 
-Simple Chrome extension that integrates with my bookmarking service
+Simple Chrome extension that integrates with [Roosmarks](https://roosmarks.herokuapp.com/).
