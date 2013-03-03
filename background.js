@@ -4,7 +4,7 @@ var showBookmark = function(tab) {
   var req = new XMLHttpRequest();
   req.onload = function() {
     if (this.status == 200) {
-      chrome.browserAction.setBadgeText({text: '1', tabId: tab.id});
+      chrome.browserAction.setIcon({"path": "images/icon19-yellow.png", tabId: tab.id})
     };
   };
   req.open('GET', bookmarkUrl, true);
