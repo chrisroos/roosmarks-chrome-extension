@@ -1,13 +1,3 @@
-// TODO
-// * Change the colour of the icon if I've already bookmarked the page, i.e. make
-//   the http request for each page view, not just when the button is clicked.
-//     -- I've made a fairly trivial improvement here by setting the badge, but it can
-//        definitely be improved.
-// * Custom icon for the toolbar
-// * Can I avoid the 404 warnings in the background.js console if a bookmark doesn't
-//   exist for the given URL?
-// * Display the new bookmark form if the request to roosmarks returns a 404
-
 var showBookmark = function(url) {
   bookmarkUrl = 'https://roosmarks.herokuapp.com/bookmarks/';
   bookmarkUrl = bookmarkUrl + encodeURIComponent(url);
