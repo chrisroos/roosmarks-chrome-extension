@@ -1,13 +1,16 @@
-var showBookmark = function(tab) {
+var roosmarksUrlFor = function(url) {
   var roosmarksServer = localStorage['roosmarksServer'];
-  var bookmarkUrl = roosmarksServer + '/bookmarks/' + encodeURIComponent(tab.url);
+  return roosmarksServer + '/bookmarks/' + encodeURIComponent(url);
+}
+
+var showBookmark = function(tab) {
   var req = new XMLHttpRequest();
   req.onload = function() {
     if (this.status == 200) {
       chrome.browserAction.setIcon({"path": "images/icon19-yellow.png", tabId: tab.id})
     };
   };
-  req.open('GET', bookmarkUrl, true);
+  req.open('GET', roosmarksUrlFor(tab.url), true);
   req.setRequestHeader('Accept', 'application/json');
   req.send(null);
 }

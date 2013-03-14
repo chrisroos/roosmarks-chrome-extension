@@ -6,8 +6,6 @@
 
 * Display the Roosmarks server in the tooltip of the extension
 
-* Have a single function that takes a URL and returns the roosmarks URL.
-
 * Make the extensions page purdy
 
 * Handle the case where the roosmarks server hasn't been set

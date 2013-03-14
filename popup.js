@@ -1,6 +1,6 @@
+var backgroundPage = chrome.extension.getBackgroundPage()
+
 var showBookmark = function(url) {
-  var roosmarksServer = localStorage['roosmarksServer'];
-  var bookmarkUrl = roosmarksServer + '/bookmarks/' + encodeURIComponent(url);
   var req = new XMLHttpRequest();
   req.onload = function() {
     var bookmarkContainer = document.createElement('div');
@@ -16,7 +16,7 @@ var showBookmark = function(url) {
     };
     document.body.appendChild(bookmarkContainer);
   };
-  req.open('GET', bookmarkUrl, true);
+  req.open('GET', backgroundPage.roosmarksUrlFor(url), true);
   req.setRequestHeader('Accept', 'application/json');
   req.send(null);
 }
