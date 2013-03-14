@@ -4,8 +4,8 @@
 
 * Use a HEAD request, rather than GET, to determine the presence of a bookmark
 
-* Display the Roosmarks server in the tooltip of the extension
-
 * Make the extensions page purdy
 
 * Handle the case where the roosmarks server hasn't been set
+
+* Update the roosmarks server url in the tooltip of the extension when it's changed in the options

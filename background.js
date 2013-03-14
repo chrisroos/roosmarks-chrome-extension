@@ -1,7 +1,10 @@
+var roosmarksServer = localStorage['roosmarksServer'];
+
 var roosmarksUrlFor = function(url) {
-  var roosmarksServer = localStorage['roosmarksServer'];
   return roosmarksServer + '/bookmarks/' + encodeURIComponent(url);
 }
+
+chrome.browserAction.setTitle({title: "Roosmarks (" + roosmarksServer + ")"});
 
 var showBookmark = function(tab) {
   var req = new XMLHttpRequest();
