@@ -16,6 +16,7 @@
     "default_popup": "popup.html",
     "default_title": "Roosmarks"
   },
+  "options_page": "options.html",
   "permissions": [
     "https://roosmarks.herokuapp.com/",
     "tabs"

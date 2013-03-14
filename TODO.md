@@ -4,6 +4,10 @@
 
 * Use a HEAD request, rather than GET, to determine the presence of a bookmark
 
-* Allow the roosmarks server to be configured so that it's easy to swap between development/production
-
 * Display the Roosmarks server in the tooltip of the extension
+
+* Have a single function that takes a URL and returns the roosmarks URL.
+
+* Make the extensions page purdy
+
+* Handle the case where the roosmarks server hasn't been set

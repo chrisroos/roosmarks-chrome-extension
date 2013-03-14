@@ -1,6 +1,6 @@
 var showBookmark = function(tab) {
-  bookmarkUrl = 'https://roosmarks.herokuapp.com/bookmarks/';
-  bookmarkUrl = bookmarkUrl + encodeURIComponent(tab.url);
+  var roosmarksServer = localStorage['roosmarksServer'];
+  var bookmarkUrl = roosmarksServer + '/bookmarks/' + encodeURIComponent(tab.url);
   var req = new XMLHttpRequest();
   req.onload = function() {
     if (this.status == 200) {
